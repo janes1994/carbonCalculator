@@ -63,15 +63,38 @@
         </div>
     </div>
     <div style="width: 40%">
-        <div style="width: 100px; height: 100px; background-color: yellow; text-align: center; margin-bottom: 5px">
+        <button style="width: 100px; height: 100px; background-color: yellow; text-align: center; margin-bottom: 5px; border: none" type="button" data-bs-toggle="modal" data-bs-target="#laporanRangkumanModal">
             <i class="bi bi-envelope-open"></i>
             <p>Laporkan Rangkuman</p>
-        </div>
-        <div style="width: 100px; height: 100px; background-color: yellow; text-align: center;">
+        </button>
+        <br/>
+        <button style="width: 100px; height: 100px; background-color: yellow; text-align: center; border: none">
             <i class="bi bi-printer-fill"></i>
             <p>Cetak Sertifikat</p>
-        </div>
+        </button>
     </div>
+</div>
+
+<!-- Laporan Rangkuman Modal -->
+<div class="modal fade" id="laporanRangkumanModal" tabindex="-1" aria-labelledby="laporanRangkumanModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Laporan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Apakah ada saran dan komentar yang anda ingin tambahkan ?</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Default">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">HASIL KARBON NETRAL TAHUN 2021</div>
