@@ -1,0 +1,272 @@
+﻿        <div
+          style="
+            background-color: red;
+            color: white;
+            font-size: 11px;
+            height: 40px;
+            padding-top: 12px;
+            padding-left: 15px;
+            margin-bottom: 10px;
+          "
+        >
+          <i class="bi bi-house-door" style="margin-right: 5px"></i>
+          LANGKAH 1 - Kalkulasi emisi karbon di tempat tinggal. Silahkan input
+          data konsumsi energi
+        </div>
+
+        <div>
+          <p>Silahkan input data konsumsi</p>
+
+          <div class="mb-3 row">
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Jumlah orang dalam rumah</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Konsumsi listrik bulan ini
+              (kWh)</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="0"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Konsumsi gas LPG bulan ini
+              (kg)</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="0"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Konsumsi gas kota bulan ini
+              (M3)</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="0"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <button
+              type="submit"
+              class="btn btn-primary mb-3"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i>
+              Jalankan kalkulator untuk menampilkan hasih dibawah!
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="row">
+            <div class="col-sm-2">
+              <label style="font-size: 12px"> </label>
+            </div>
+            <div class="col-sm-2">
+              <label style="font-size: 12px">Akumulasi bulan ini </label>
+            </div>
+            <div class="col-sm-2">
+              <label style="font-size: 12px">Akumulasi setahun </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <label style="font-size: 12px">
+                <i class="bi bi-person"></i> Konsumsi listrik (kWh)</label
+              >
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <label style="font-size: 12px">
+                <i class="bi bi-person"></i> Konsumsi gas (M3)</label
+              >
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2">
+              <label style="font-size: 12px">
+                <i class="bi bi-person"></i> Emisi CO2 dan listrik (kg
+                CO2-e)</label
+              >
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2">
+              <label style="font-size: 12px">
+                <i class="bi bi-person"></i> Emisi CO2 dan gas (kg CO2-e)</label
+              >
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <label style="font-size: 12px">
+                <i class="bi bi-person"></i> Emisi CO2 per orang (kg
+                CO2-e)</label
+              >
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                readonly
+                aria-label="First name"
+                value="99"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary mb-3"
+            style="font-size: 12px"
+          >
+            <i class="bi bi-person"></i>
+            Lihat histori kalkulasi data rumah
+          </button>
+        </div>
+

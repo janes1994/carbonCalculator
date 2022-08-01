@@ -1,0 +1,101 @@
+﻿<div
+    style="
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    "
+>
+    <i class="bi bi-house-door" style="margin-right: 5px"></i>
+    Halaman ini berisi kesimpulan dari tiap-tiap langkah (Tempat tinggal, Transportasi, Serapan Karbon)
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index">Ringkasan Utama</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="DetilRingkasan">Detil Ringkasan</a>
+  </li>
+</ul>
+
+<div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">RINGKASAN KARBON NETRAL</div>
+<div style="display: flex">
+    <div style="display: flex; width: 60%; height: 150px; font-size: 10px">
+        <div style="background-color: red;  width: 100%">
+            <div style="display: flex; width: 100%; height: 50%">
+                <div style="background-color: green; width: 50%; color: white; padding: 5px; margin-right: 5px">
+                    <p style="margin-bottom: 0px; font: 11px bold">Total Akum.EMISI</p>
+                    <p style="margin-bottom: 0px">Ton CO2 eq per orang per tahun</p>
+                    <p style="margin-bottom: 0px; font: 18px bold; color: red; text-align: center">97.7</p>
+                </div>
+                <div style="background-color: green; width: 50%; color: white; padding: 5px">
+                    <p style="margin-bottom: 0px; font: 11px bold">Total Serapan Karbon</p>
+                    <p style="margin-bottom: 0px">Ton CO2 eq per tahun</p>
+                    <p style="margin-bottom: 0px; font: 18px bold; color: red; text-align: center">18.8</p>
+                </div>
+            </div>
+            <div style="background-color: blue; height: 50%;color: white; width: 100%; padding: 5px">
+                <p style="margin-bottom: 0px; font: 11px bold">Emisi Karbon (FINAL)</p>
+                <p style="margin-bottom: 0px">Emisi - Daya Serap (Ton CO2 eq per orang per tahun)</p>
+                <p style="margin-bottom: 0px; font: 18px bold; text-align: center">-78.9</p>
+            </div>
+        </div>
+        <div style="display: flex; background-color: sandybrown; width: 100%">
+            <div>
+                <div><b>Ringkasan</b></div>
+                <div><img src="merah.png" alt="merah"/></div>
+            </div>
+            <div style="padding: 5px">
+                <p>
+                    Segera kurangi emisi anda dengan melakukan hal-hal berikut:
+                    1. Menghemat energi
+                    2. Memilih mode transportasi rendah emisi **
+                    3. Menanam pohon
+                    4. Mendonasikan pohon
+
+                    **) Tetap patuhi protokol kesehatan
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="width: 40%">
+        <div>
+            <i class="bi bi-house-door"></i>
+            <p>Laporkan Rangkuman</p>
+        </div>
+        <div>
+            <i class="bi bi-house-door"></i>
+            <p>Cetak Sertifikat</p>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">HASIL KARBON NETRAL TAHUN 2021</div>
+
+<div id="myPlot" style="width:60%;max-width:700px; height: 90%"></div>
+
+<script>
+    var xArray = [50,60,70,80,90,100,110,120,130,140,150];
+    var yArray = [7,8,8,9,9,9,10,11,14,14,15];
+
+    // Define Data
+    var data = [{
+      x: xArray,
+      y: yArray,
+      mode:"lines"
+    }];
+
+    // Define Layout
+    var layout = {
+      xaxis: {range: [40, 160], title: "Angka Bulan pada Tahun (1 = Jan, 2 = Feb, dsb...)"},
+      yaxis: {range: [5, 16], title: "Akumulasi Emisi Karbon Final (Ton CO2-e Per Orang)"},  
+      title: ""
+    };
+
+    // Display using Plotly
+    Plotly.newPlot("myPlot", data, layout);
+</script>

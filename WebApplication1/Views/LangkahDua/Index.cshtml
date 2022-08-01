@@ -1,0 +1,189 @@
+﻿<div
+    style="
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    "
+>
+    <i class="bi bi-house-door" style="margin-right: 5px"></i>
+    LANGKAH 2 - Kalkulasi emisi karbon dari transportasi. Silahkan input kegiatan perjalanan, perkiraan frekuensi dan jarak tempuh
+    data konsumsi energi
+</div>
+<div>
+    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Tambahkan data transportasi
+</button>
+    <table class="table table-striped" style="font-size: 11px">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Transportasi</th>
+          <th scope="col">Penumpang (Orang)</th>
+          <th scope="col">Jarak Tempuh (Km)</th>
+          <th scope="col">Estimasi Frekuensi/Bulan</th>
+          <th scope="col">BBM/Bulan (Liter)</th>
+          <th scope="col">BBM/Orang/Tahun (Liter)</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mobil pribadi [=< 1500cc]</td>
+          <td>2</td>
+          <td>1</td>
+          <td>0.88</td>
+          <td>0.01</td>
+          <td>0.04</td>
+          <td><i class="bi bi-pencil-square"></i></td>
+          <td><i class="bi bi-trash"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Mobil pribadi [=< 1500cc]</td>
+          <td>2</td>
+          <td>1</td>
+          <td>0.88</td>
+          <td>0.01</td>
+          <td>0.04</td>
+          <td><i class="bi bi-pencil-square"></i></td>
+          <td><i class="bi bi-trash"></i><td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Mobil pribadi [=< 1500cc]</td>
+          <td>2</td>
+          <td>1</td>
+          <td>0.88</td>
+          <td>0.01</td>
+          <td>0.04</td>
+          <td><i class="bi bi-pencil-square"></i></td>
+          <td><i class="bi bi-trash"></i><td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+            <td>Total: 0.27</td>
+            <td>Total: 0.27</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="bi bi-bicycle"></i>Transportasi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Jenis Transportasi</label
+            >
+            <div class="col-sm-5">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pilih Jenis Transportasi
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pribadi - Mobil pribadi [=< 1500cc]</a></li>
+                    <li><a class="dropdown-item" href="#">Pribadi - Mobil pribadi [=> 1500cc]</a></li>
+                    <li><a class="dropdown-item" href="#">Pribadi - Sepeda Motor</a></li>
+                    <li><a class="dropdown-item" href="#">Umum - Mikrolet/Angkot</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Penumpang (Orang)</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Jarak Tempuh (Km)</label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Frekuensi Perjalanan </label
+            >
+            <div class="col-sm-5">
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+
+            <label
+              for="staticEmail"
+              class="col-sm-2 col-form-label"
+              style="font-size: 12px"
+            >
+              <i class="bi bi-person"></i> Per </label
+            >
+            <div class="col-sm-5">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pilih Frekuensi
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Bulan</a></li>
+                    <li><a class="dropdown-item" href="#">Tahun</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

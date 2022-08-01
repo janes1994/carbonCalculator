@@ -1,0 +1,415 @@
+﻿<div
+    style="
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    "
+>
+    <i class="bi bi-house-door" style="margin-right: 5px"></i>
+    Halaman ini berisi kesimpulan dari tiap-tiap langkah (Tempat tinggal, Transportasi, Serapan Karbon)
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index">Ringkasan Utama</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="DetilRingkasan">Detil Ringkasan</a>
+  </li>
+</ul>
+
+<div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">DETAIL RINGKASAN EMISI</div>
+
+<div>
+  <div
+    style="
+      display: flex;
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(181, 230, 181);
+    "
+  >
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Konsumsi Listrik
+      </p>
+      <p style="margin-bottom: -5px">Bulan berjalan dalam kWh</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        6000
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Pemakaian Listrik
+      </p>
+      <p style="margin-bottom: -5px">Per Orang / Tahun dalam kWh</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        1200.0
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi EMISI CO2 dari Listrik
+      </p>
+      <p style="margin-bottom: -5px">Ton CO2 eq Per Orang / Tahun</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        1.0
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(119, 220, 119);
+    "
+  >
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Pemakaian Gas
+      </p>
+      <p style="margin-bottom: -5px">Bulan Berjalan dalam M3</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        103.82
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Pemakaian Gas
+      </p>
+      <p style="margin-bottom: -5px">Per Orang / Tahun dalam M3</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        20.8
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi CO2 dari Gas
+      </p>
+      <p style="margin-bottom: -5px">Ton CO2 eq Per Orang / Tahun</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        43.8
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(181, 230, 181);
+      border: 2px solid white;
+      box-sizing: border-box; ;
+    "
+  >
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Pemakaian BBM
+      </p>
+      <p style="margin-bottom: -5px">Bulan Berjalan dalam Liter</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        960.7
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi Pemakaian BBM
+      </p>
+      <p style="margin-bottom: -5px">Per Orang / Tahun dalam Liter</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        240.4
+      </p>
+    </div>
+    <div style="height: 100px; width: 100%">
+      <p style="font-weight: bold; margin-bottom: -5px">
+        Akumulasi EMISI CO2 dari BBM
+      </p>
+      <p style="margin-bottom: -5px">Ton CO2 eq Per Orang / Tahun</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        52.9
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(119, 220, 119);
+      box-sizing: border-box;
+      border: 2px solid white;
+    "
+  >
+    <p
+      style="
+        margin-bottom: 0px;
+        font-size: 11px;
+        font-weight: bold;
+        margin-bottom: -5px;
+      "
+    >
+      Total Akumulasi EMISI CO2
+    </p>
+    <p style="margin-bottom: -5px">Ton CO2 eq per orang per tahun</p>
+    <p
+      style="
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: red;
+        text-align: center;
+      "
+    >
+      97.7
+    </p>
+  </div>
+</div>
+
+<div
+  style="
+    background-color: grey;
+    height: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-top: 15px;
+  "
+>
+  RINGKASAN SERAPAN KARBON
+</div>
+
+<div>
+  <div
+    style="
+      display: flex;
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(181, 230, 181);
+    "
+  >
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">Pohon Ditanam</p>
+      <p style="margin-bottom: -5px">Jumlah Pohon</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        1
+      </p>
+    </div>
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">Total Serapan Karbon</p>
+      <p style="margin-bottom: -5px">Ton CO2 eq per orang per tahun</p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        18.8
+      </p>
+    </div>
+  </div>
+</div>
+
+<div
+  style="
+    background-color: grey;
+    height: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-top: 15px;
+  "
+>
+  RINGKASAN KARBON NETRAL
+</div>
+
+<div>
+  <div
+    style="
+      display: flex;
+      width: 60%;
+      height: 100px;
+      font-size: 10px;
+      background-color: rgb(181, 230, 181);
+    "
+  >
+    <div
+      style="
+        height: 100px;
+        width: 100%;
+        border: 2px solid white;
+        box-sizing: border-box;
+      "
+    >
+      <p style="font-weight: bold; margin-bottom: -5px">Emisi Karbon (FINAL)</p>
+      <p style="margin-bottom: -5px">
+        Emisi - Daya Serap (Ton CO2 eq per orang per tahun)
+      </p>
+      <p
+        style="
+          text-align: center;
+          font-size: 16;
+          font-weight: bold;
+          color: rgb(0, 128, 255);
+        "
+      >
+        -78.9
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="row" style="background-color: rgb(217, 238, 204)">
+      <div
+        class="col-lg-2"
+        style="
+          background-color: rgb(217, 238, 204);
+          padding-right: 0px !important;
+        "
+      >
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-column pe-3">
+                  <li class="nav-item">
+                    <img src="logo.png" alt="logo" style="width: 100%" />
+                  </li>
+                  <li class="nav-item" style="margin-top: 15px">
+                    <b style="font-size: 13px; color: rgb(185, 45, 45)"
+                      >Profil Pengguna</b
+                    >
+                    <hr style="margin-top: 1px; margin-bottom: 1px" />
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label"
+                      style="color: blue; font-size: 12px"
+                      >Halo! nama saya</label
+                    >
+                    <br />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="John Sample"
+                      style="font-size: 12px"
+                    />
+
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label"
+                      style="color: blue; font-size: 12px"
+                      >Saya bekerja di</label
+                    >
+                    <br />
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-outline-dark dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="font-size: 11px; width: 100%; margin-bottom: 5px"
+                      >
+                        Pilih salah satu
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        style="width: 100%; font-size: 11px"
+                      >
+                        <li>PT Pertamina A</li>
+                        <li>PT Pertamina B</li>
+                        <li>PT Pertamina C</li>
+                      </ul>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="font-size: 11px; width: 100%; display: flex"
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div style="flex: 90%">Update Data Pengguna</div>
+                    </button>
+                  </li>
+                  <br />
+                  <li
+                    class="nav-item"
+                    style="
+                      background-color: rgb(25, 94, 168);
+                      color: antiquewhite;
+                      font-size: 11px;
+                      text-align: center;
+                      padding: 10px;
+                    "
+                  >
+                    <b>Periode Pelaporan</b>
+
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          font-size: 11px;
+                          width: 100%;
+                          background-color: whitesmoke;
+                          color: black;
+                          margin-bottom: 5px;
+                        "
+                      >
+                        Pilih periode
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        style="width: 100%; font-size: 11px"
+                      >
+                        <li>Januari 2022</li>
+                        <li>Februari 2022</li>
+                        <li>Maret 2022</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item" style="margin-top: 15px">
+                    <b style="font-size: 13px; color: rgb(185, 45, 45)"
+                      >Referensi</b
+                    >
+                    <hr style="margin-top: 1px" />
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="
+                        font-size: 11px;
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 5px;
+                      "
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+                      </div>
+                      <div style="flex: 90%">Benchmark</div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="
+                        font-size: 11px;
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 5px;
+                      "
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-globe"></i>
+                      </div>
+                      <div style="flex: 90%">
+                        Panduan Serapan Karbon / Donasi Karbon
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="
+                        font-size: 11px;
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 5px;
+                      "
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-lightbulb"></i>
+                      </div>
+                      <div style="flex: 90%">Panduan Hemat Energi Listrik</div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="
+                        font-size: 11px;
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 5px;
+                      "
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-bicycle"></i>
+                      </div>
+                      <div style="flex: 90%">
+                        Panduan Hemat Energi Transportasi
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      style="
+                        font-size: 11px;
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 5px;
+                      "
+                    >
+                      <div style="flex: 10%">
+                        <i class="bi bi-film"></i>
+                      </div>
+                      <div style="flex: 90%">Petunjuk Penggunaan Aplikasi</div>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <!-- navbar -->
+        <nav
+          class="navbar navbar-expand-lg"
+          style="background-color: rgb(217, 238, 204)"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            @*<a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              style="font-size: 12px"
+              ><i class="bi bi-person"></i> Beranda</a
+            >*@
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-person"></i>Beranda</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" asp-area="" asp-controller="LangkahSatu" asp-action="Index" style="font-size: 12px">
+                      <i class="bi bi-house-door"></i> Langkah 1 - Tempat Tinggal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" asp-area="" asp-controller="LangkahDua" asp-action="Index" style="font-size: 12px"><i class="bi bi-bicycle"></i>Langkah 2 - Transportasi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" asp-area="" asp-controller="LangkahTiga" asp-action="Index" style="font-size: 12px"><i class="bi bi-bicycle"></i>Langkah 3 - Serapan Karbon</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index" style="font-size: 12px"><i class="bi bi-journal-check"></i>Ringkasan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar -->
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+      </div>
+    </div>
+
+    
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
