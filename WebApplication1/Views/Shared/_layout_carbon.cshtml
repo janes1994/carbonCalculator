@@ -156,6 +156,7 @@
                     <button
                       type="button"
                       class="btn btn-light btn-outline-dark rounded-0"
+                      data-bs-toggle="modal" data-bs-target="#benchmarkModal"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -171,6 +172,7 @@
                     <button
                       type="button"
                       class="btn btn-light btn-outline-dark rounded-0"
+                      data-bs-toggle="modal" data-bs-target="#panduanSerapanKarbonModal"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -188,6 +190,7 @@
                     <button
                       type="button"
                       class="btn btn-light btn-outline-dark rounded-0"
+                      data-bs-toggle="modal" data-bs-target="#panduanPenghematanListrikModal"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -203,6 +206,7 @@
                     <button
                       type="button"
                       class="btn btn-light btn-outline-dark rounded-0"
+                      data-bs-toggle="modal" data-bs-target="#panduanHematEnergiTransportasiModal"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -217,8 +221,9 @@
                         Panduan Hemat Energi Transportasi
                       </div>
                     </button>
-                    <button
-                      type="button"
+                    <a
+                      href="https://www.youtube.com/watch?v=31ExeUook4w"
+                      target="_blank"
                       class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
@@ -230,7 +235,8 @@
                         <img src="https://img.icons8.com/color/48/000000/cinema---v1.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">Petunjuk Penggunaan Aplikasi</div>
-                    </button>
+                    </a>
+                    
                   </li>
                 </ul>
               </div>
@@ -302,6 +308,103 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
+        <!-- Benchmark Modal -->
+        <div class="modal fade" id="benchmarkModal" tabindex="-1" aria-labelledby="benchmarkModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-header rounded-0" rounded-0" style="background-color: rgb(130, 144, 92)">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: white">Referensi Benchmark</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mb-3">
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/color/48/000000/info--v1.png" style="width: 18px; height: 18px; margin-right: 5px"/>
+                    <p style="display: inline">Pilih file dibawah lalu klik tombol untuk membuka</p>
+                </div>
+                <div class="list-group rounded-0">
+                    <button type="button" class="list-group-item list-group-item-action">1. Benchmarking Jejak Karbon</button>
+                    <button type="button" class="list-group-item list-group-item-action">2. Benchmark Jejak Karbon Puspitek UI 2012</button>
+                    <button type="button" class="list-group-item list-group-item-action">3. Benchmark Studi Jejak Karbon Jakut UI 2012</button>
+                    <button type="button" class="list-group-item list-group-item-action">4. Benchmark Global Average Footprint 1990 - 2005</button>
+                    <button type="button" class="list-group-item list-group-item-action">5. Benchmark List of Countries by CO2 per Capita</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panduan Serapan Karbon Modal -->
+        <div class="modal fade" id="panduanSerapanKarbonModal" tabindex="-1" aria-labelledby="panduanSerapanKarbonModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-header rounded-0" rounded-0" style="background-color: rgb(130, 144, 92)">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: white">Referensi Panduan Serapan Karbon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mb-3">
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/color/48/000000/info--v1.png" style="width: 18px; height: 18px; margin-right: 5px"/>
+                    <p style="display: inline">Pilih file dibawah lalu klik tombol untuk membuka</p>
+                </div>
+                <div class="list-group rounded-0">
+                    <button type="button" class="list-group-item list-group-item-action">1. Sedekah Pohon dompet Dhuafa Banner</button>
+                    <button type="button" class="list-group-item list-group-item-action">2. Link Donasi Pohon Dompet Dhuafa</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panduan Penghematan Listrik Modal -->
+        <div class="modal fade" id="panduanPenghematanListrikModal" tabindex="-1" aria-labelledby="panduanPenghematanListrikModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-header rounded-0" rounded-0" style="background-color: rgb(130, 144, 92)">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: white">Referensi Panduan Penghematan Listrik</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mb-3">
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/color/48/000000/info--v1.png" style="width: 18px; height: 18px; margin-right: 5px"/>
+                    <p style="display: inline">Pilih file dibawah lalu klik tombol untuk membuka</p>
+                </div>
+                <div class="list-group rounded-0">
+                    <button type="button" class="list-group-item list-group-item-action">1. Hemat Energi Masa Pandemi Work From Home</button>
+                    <button type="button" class="list-group-item list-group-item-action">2. Efisiensi Energi Potong 10 Persen</button>
+                    <button type="button" class="list-group-item list-group-item-action">3. Tips 3 Aksi Hemat Energi EBTKE</button>
+                    <button type="button" class="list-group-item list-group-item-action">4. Energy Switch - Vampir Energi</button>
+                    <button type="button" class="list-group-item list-group-item-action">5. Vampir Listrik</button>
+                    <button type="button" class="list-group-item list-group-item-action">6. Hemat Listrik untuk IBU - ESDM EBTKE</button>
+                    <button type="button" class="list-group-item list-group-item-action">7. Listrik Baik Untuk Indonesia Mandiri Energi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panduan Hemat Energi Transportasi Modal -->
+        <div class="modal fade" id="panduanHematEnergiTransportasiModal" tabindex="-1" aria-labelledby="panduanHematEnergiTransportasiModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-header rounded-0" rounded-0" style="background-color: rgb(130, 144, 92)">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: white">Referensi Panduan Hemat Energi Transportasi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mb-3">
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/color/48/000000/info--v1.png" style="width: 18px; height: 18px; margin-right: 5px"/>
+                    <p style="display: inline">Pilih file dibawah lalu klik tombol untuk membuka</p>
+                </div>
+                <div class="list-group rounded-0">
+                    <button type="button" class="list-group-item list-group-item-action">1. Green Transport - LAPAN</button>
+                    <button type="button" class="list-group-item list-group-item-action">2. Tips Berkendara Ramah Lingkungan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
