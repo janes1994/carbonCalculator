@@ -11,26 +11,23 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="row" style="background-color: rgb(217, 238, 204)">
+    <div class="row g-3" style="
+          background-color: rgb(234, 237, 210);
+          width: 100%;
+          
+        ">
       <div
         class="col-lg-2"
-        style="
-          background-color: rgb(217, 238, 204);
-          padding-right: 0px !important;
-        "
+        style="padding-right: 0px !important"
       >
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg" >
+          <div class="container-fluid" style="padding-right: 0px !important;">
             <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
             <div
               class="offcanvas offcanvas-start"
@@ -51,8 +48,8 @@
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-column pe-3">
-                  <li class="nav-item">
-                    <img src="logo.png" alt="logo" style="width: 100%" />
+                  <li class="nav-item" style="margin: 0px !important">
+                    <img src="logo.png" alt="logo" style="width: 100%; height: 100%" />
                   </li>
                   <li class="nav-item" style="margin-top: 15px">
                     <b style="font-size: 13px; color: rgb(185, 45, 45)"
@@ -68,7 +65,7 @@
                     <br />
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control rounded-0"
                       id="exampleFormControlInput1"
                       placeholder="John Sample"
                       style="font-size: 12px"
@@ -83,7 +80,7 @@
                     <br />
                     <div class="dropdown">
                       <button
-                        class="btn btn-outline-dark dropdown-toggle"
+                        class="btn btn-light btn-outline-dark dropdown-toggle rounded-0"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -103,11 +100,11 @@
 
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="font-size: 11px; width: 100%; display: flex"
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-pencil-square"></i>
+                        <img src="https://img.icons8.com/color/48/000000/save--v1.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">Update Data Pengguna</div>
                     </button>
@@ -127,7 +124,7 @@
 
                     <div class="dropdown">
                       <button
-                        class="btn btn-secondary dropdown-toggle"
+                        class="btn btn-secondary dropdown-toggle rounded-0"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -158,7 +155,7 @@
                     <hr style="margin-top: 1px" />
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -167,13 +164,13 @@
                       "
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-file-earmark-bar-graph"></i>
+                        <img src="https://img.icons8.com/color/48/000000/gantt-chart.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">Benchmark</div>
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -182,7 +179,7 @@
                       "
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-globe"></i>
+                        <img src="https://img.icons8.com/color/48/000000/globe--v1.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">
                         Panduan Serapan Karbon / Donasi Karbon
@@ -190,7 +187,7 @@
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -199,13 +196,13 @@
                       "
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-lightbulb"></i>
+                        <img src="https://img.icons8.com/color/48/000000/light.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">Panduan Hemat Energi Listrik</div>
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
                         width: 100%;
@@ -214,7 +211,7 @@
                       "
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-bicycle"></i>
+                        <img src="https://img.icons8.com/color/48/000000/bus.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">
                         Panduan Hemat Energi Transportasi
@@ -222,16 +219,15 @@
                     </button>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-light btn-outline-dark rounded-0"
                       style="
                         font-size: 11px;
                         width: 100%;
                         display: flex;
-                        margin-bottom: 5px;
                       "
                     >
                       <div style="flex: 10%">
-                        <i class="bi bi-film"></i>
+                        <img src="https://img.icons8.com/color/48/000000/cinema---v1.png" style="width: 18px; height: 18px"/>
                       </div>
                       <div style="flex: 90%">Petunjuk Penggunaan Aplikasi</div>
                     </button>
@@ -242,11 +238,11 @@
           </div>
         </nav>
       </div>
-      <div class="col">
+      <div class="col" style="padding-left: 0px !important">
         <!-- navbar -->
         <nav
           class="navbar navbar-expand-lg"
-          style="background-color: rgb(217, 238, 204)"
+          style="background-color: rgb(234, 236, 212);"
         >
           <div class="container-fluid">
             <button
@@ -265,7 +261,9 @@
               style="font-size: 12px"
               ><i class="bi bi-person"></i> Beranda</a
             >*@
-            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-person"></i>Beranda</a>
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 14px">
+                <img src="https://img.icons8.com/office/16/000000/person-male.png" style="width: 18px; height: 18px"/> BERANDA
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -280,17 +278,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-dark" asp-area="" asp-controller="LangkahSatu" asp-action="Index" style="font-size: 12px">
-                      <i class="bi bi-house-door"></i> Langkah 1 - Tempat Tinggal</a>
+                  <a class="nav-link" asp-area="" asp-controller="LangkahSatu" asp-action="Index" style="font-size: 14px">
+                      <img src="https://img.icons8.com/color/48/000000/cottage.png" style="width: 18px; height: 18px"/> Langkah 1 - Tempat Tinggal</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="LangkahDua" asp-action="Index" style="font-size: 12px"><i class="bi bi-bicycle"></i>Langkah 2 - Transportasi</a>
+                  <a class="nav-link" asp-area="" asp-controller="LangkahDua" asp-action="Index" style="font-size: 14px">
+                      <img src="https://img.icons8.com/color/48/000000/bus.png" style="width: 18px; height: 18px"/> Langkah 2 - Transportasi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="LangkahTiga" asp-action="Index" style="font-size: 12px"><i class="bi bi-bicycle"></i>Langkah 3 - Serapan Karbon</a>
+                  <a class="nav-link" asp-area="" asp-controller="LangkahTiga" asp-action="Index" style="font-size: 14px">
+                      <img src="https://img.icons8.com/color/48/000000/sunflower.png" style="width: 18px; height: 18px"/> Langkah 3 - Serapan Karbon</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index" style="font-size: 12px"><i class="bi bi-journal-check"></i>Ringkasan</a>
+                  <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index" style="font-size: 14px">
+                      <img src="https://img.icons8.com/color/48/000000/brief.png" style="width: 18px; height: 18px"/> Ringkasan</a>
                 </li>
               </ul>
             </div>

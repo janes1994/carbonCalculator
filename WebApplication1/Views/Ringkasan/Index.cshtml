@@ -1,82 +1,107 @@
-﻿<div
-    style="
-    background-color: red;
-    color: white;
-    font-size: 11px;
-    height: 40px;
-    padding-top: 12px;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    "
->
-    <i class="bi bi-house-door" style="margin-right: 5px"></i>
+﻿<p style="background-color: red; color: white; padding: 12px">
+    <img src="https://img.icons8.com/color/48/000000/brief.png" style="width: 18px; height: 18px"/>
     Halaman ini berisi kesimpulan dari tiap-tiap langkah (Tempat tinggal, Transportasi, Serapan Karbon)
-</div>
+</p>
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index">Ringkasan Utama</a>
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="Index"> <i class="bi bi-journal-richtext"></i> Ringkasan Utama</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="DetilRingkasan">Detil Ringkasan</a>
+    <a class="nav-link" asp-area="" asp-controller="Ringkasan" asp-action="DetilRingkasan"><i class="bi bi-journal-text"></i> Detil Ringkasan</a>
   </li>
 </ul>
 
-<div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">RINGKASAN KARBON NETRAL</div>
-<div style="display: flex">
-    <div style="display: flex; width: 60%; height: 150px; font-size: 10px">
-        <div style="background-color: red;  width: 100%">
+<div style="background-color: rgb(126, 126, 126); height: 30px; color: white; text-align: center; width: 90%; margin-top: 15px; margin-bottom: 5px">RINGKASAN KARBON NETRAL</div>
+<div style="display: flex;">
+    <div style="display: flex; width: 90%; height: 200px; font-size: 10px">
+        <div style="width: 100%">
             <div style="display: flex; width: 100%; height: 50%">
-                <div style="background-color: green; width: 50%; color: white; padding: 5px; margin-right: 5px">
-                    <p style="margin-bottom: 0px; font: 11px bold">Total Akum.EMISI</p>
-                    <p style="margin-bottom: 0px">Ton CO2 eq per orang per tahun</p>
-                    <p style="margin-bottom: 0px; font: 18px bold; color: red; text-align: center">97.7</p>
+                <div style="background-color: rgb(153, 178, 82); width: 50%; color: white; padding: 5px; margin-right: 5px; display: flex; flex-direction: column">
+                    <div style="flex-basis: 80%">
+                        <p style="margin-bottom: 0px; font-size: 12px; font-weight: bold">Total Akum.EMISI</p>
+                        <p style="margin-bottom: 0px">Ton CO2 eq per orang per tahun</p>
+                    </div>
+                    <div style="flex-basis: 20%">
+                        <p style="margin-bottom: 0px; font-size: 18px; font-weight: bold; color: red; text-align: center">97.7</p>
+                    </div>
                 </div>
-                <div style="background-color: green; width: 50%; color: white; padding: 5px">
-                    <p style="margin-bottom: 0px; font: 11px bold">Total Serapan Karbon</p>
-                    <p style="margin-bottom: 0px">Ton CO2 eq per tahun</p>
-                    <p style="margin-bottom: 0px; font: 18px bold; color: red; text-align: center">18.8</p>
+                <div style="background-color: rgb(153, 178, 82); width: 50%; color: white; padding: 5px; display: flex; flex-direction: column">
+                    <div style="flex-basis: 80%">
+                        <p style="margin-bottom: 0px; font-size: 12px; font-weight: bold">Total Serapan Karbon</p>
+                        <p style="margin-bottom: 0px">Ton CO2 eq per tahun</p>
+                    </div>
+                    <div style="flex-basis: 20%">
+                        <p style="margin-bottom: 0px; font-size: 18px; font-weight: bold; color: red; text-align: center">18.8</p>
+                    </div>
                 </div>
             </div>
-            <div style="background-color: blue; height: 50%;color: white; width: 100%; padding: 5px">
-                <p style="margin-bottom: 0px; font: 11px bold">Emisi Karbon (FINAL)</p>
-                <p style="margin-bottom: 0px">Emisi - Daya Serap (Ton CO2 eq per orang per tahun)</p>
-                <p style="margin-bottom: 0px; font: 18px bold; text-align: center">-78.9</p>
+            <div style="background-color: rgb(45, 88, 157); height: 50%;color: white; width: 100%; padding: 5px; display: flex; flex-direction: column">
+                <div style="flex-basis: 80%">
+                    <p style="margin-bottom: 0px; font-size: 12px; font-weight: bold">Emisi Karbon (FINAL)</p>
+                    <p style="margin-bottom: 0px">Emisi - Daya Serap (Ton CO2 eq per orang per tahun)</p>
+                </div>
+                <div style="flex-basis: 20%">
+                    <p style="margin-bottom: 0px; font-size: 18px; font-weight: bold; text-align: center">-78.9</p>
+                </div>
             </div>
         </div>
-        <div style="display: flex; background-color: sandybrown; width: 100%">
-            <div>
-                <div><b>Ringkasan</b></div>
-                <div><img src="merah.png" alt="merah"/></div>
+        <div style="display: flex; background-color: rgb(254, 251, 187); width: 100%; padding: 2px">
+            <div style="flex-basis: 25%">
+                <div><p style="font-size: 13px; font-weight: bold">Ringkasan</p></div>
+                <div><img src="merah.png" alt="merah" style="max-width: 100px"/></div>
             </div>
-            <div style="padding: 5px">
-                <p>
-                    Segera kurangi emisi anda dengan melakukan hal-hal berikut:
-                    1. Menghemat energi
-                    2. Memilih mode transportasi rendah emisi **
-                    3. Menanam pohon
-                    4. Mendonasikan pohon
+            <div style="padding: 5px; flex-basis: 75%">
+                <p style="font-size: 12px">
+                    Segera kurangi emisi anda dengan melakukan hal-hal berikut:<br/><br/>
+                    1. Menghemat energi<br/>
+                    2. Memilih mode transportasi rendah emisi **<br/>
+                    3. Menanam pohon<br/>
+                    4. Mendonasikan pohon<br/><br/>
 
                     **) Tetap patuhi protokol kesehatan
                 </p>
             </div>
         </div>
     </div>
-    <div style="width: 40%">
-        <div>
-            <i class="bi bi-house-door"></i>
-            <p>Laporkan Rangkuman</p>
-        </div>
-        <div>
-            <i class="bi bi-house-door"></i>
-            <p>Cetak Sertifikat</p>
-        </div>
+    <div style="width: 10%">
+        <button style="width: 100px; height: 100px; background-color: rgb(248, 242, 118); text-align: center; margin-bottom: 5px; border: none" type="button" data-bs-toggle="modal" data-bs-target="#laporanRangkumanModal">
+            <img src="https://img.icons8.com/color/48/000000/open-envelope.png" style="width: 24px; height: 24px"/>
+            <p style="font-size: 12px; margin-top: 5px">Laporkan Rangkuman</p>
+        </button>
+        <br/>
+        <button style="width: 100px; height: 100px; background-color: rgb(248, 242, 118); text-align: center; border: none">
+            <img src="https://img.icons8.com/color/48/000000/print.png" style="width: 24px; height: 24px"/>
+            <p style="font-size: 12px; margin-top: 5px">Cetak Sertifikat</p>
+        </button>
     </div>
 </div>
 
-<div style="background-color: grey; height: 30px; width: 100%; color: white; text-align: center; width: 60%; margin-top: 15px">HASIL KARBON NETRAL TAHUN 2021</div>
+<!-- Laporan Rangkuman Modal -->
+<div class="modal fade" id="laporanRangkumanModal" tabindex="-1" aria-labelledby="laporanRangkumanModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Laporan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Apakah ada saran dan komentar yang anda ingin tambahkan ?</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Default">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div id="myPlot" style="width:60%;max-width:700px; height: 90%"></div>
+<div style="background-color: grey; height: 30px; width: 90%; color: white; text-align: center; margin-bottom: 5px">HASIL KARBON NETRAL TAHUN 2021</div>
+
+<div id="myPlot" style="width:90%; height: 90%"></div>
 
 <script>
     var xArray = [50,60,70,80,90,100,110,120,130,140,150];
